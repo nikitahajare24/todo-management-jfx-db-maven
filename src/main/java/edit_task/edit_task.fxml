@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edit_task.EditTaskScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff841f" height="84.0" stroke="BLACK" strokeType="INSIDE" width="866.0" />
+      <Label layoutX="28.0" layoutY="12.0" prefHeight="61.0" prefWidth="215.0" text="Edit Task" textFill="#dad5d5">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="taskNameToEdit" layoutX="400.0" layoutY="127.0" prefHeight="38.0" prefWidth="331.0" promptText="taskNameToEdit" />
+      <TextField fx:id="taskID" layoutX="400.0" layoutY="202.0" prefHeight="38.0" prefWidth="331.0" promptText="taskID" />
+      <TextField fx:id="taskName" layoutX="400.0" layoutY="278.0" prefHeight="38.0" prefWidth="331.0" promptText="taskName" />
+      <TextField fx:id="taskMark" layoutX="400.0" layoutY="358.0" prefHeight="38.0" prefWidth="331.0" promptText="taskMark" />
+      <Label layoutX="101.0" layoutY="131.0" text="taskNameToEdit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="282.0" text="New taskName">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="206.0" text="New taskID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="362.0" text="New taskMark">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="400.0" layoutY="478.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="127.0" style="-fx-background-color: orange;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="604.0" layoutY="478.0" mnemonicParsing="false" onAction="#done" prefHeight="44.0" prefWidth="127.0" style="-fx-background-color: green;" text="Done" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="userMessage" layoutX="79.0" layoutY="484.0" prefHeight="31.0" prefWidth="304.0" textFill="#f84040">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
